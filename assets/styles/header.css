@@ -2,7 +2,8 @@ header {
   height: 75px;
   width: 100%;
   background-color: #1564c0;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   font-weight: 500;
   padding-left: 8px;
   padding-right: 8px;
