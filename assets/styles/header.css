@@ -4,9 +4,17 @@ header {
   background-color: #1564c0;
   position: fixed;
   font-weight: 500;
+  padding-left: 8px;
+  padding-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 630px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 header .header-left-container {
   display: flex;
@@ -23,11 +31,41 @@ header .header-left-container .categories-box {
 header .header-left-container .categories-box span {
   margin-right: 12px;
 }
+@media (max-width: 800px) {
+  header .header-left-container .categories-box span:last-child {
+    display: none;
+  }
+}
 header .header-center-container {
   color: #ffffff;
   width: 500px;
   margin-left: 18px;
   margin-right: 18px;
+}
+@media (max-width: 1100px) {
+  header .header-center-container {
+    width: 400px;
+  }
+}
+@media (max-width: 990px) {
+  header .header-center-container {
+    width: 350px;
+  }
+}
+@media (max-width: 920px) {
+  header .header-center-container {
+    width: 300px;
+  }
+}
+@media (max-width: 875px) {
+  header .header-center-container {
+    width: 250px;
+  }
+}
+@media (max-width: 630px) {
+  header .header-center-container {
+    display: none;
+  }
 }
 header .header-center-container .search-box {
   display: flex;
@@ -63,4 +101,9 @@ header .header-right-container div:not(:last-child) {
 }
 header .header-right-container div span:last-child {
   margin-left: 12px;
+}
+@media (max-width: 800px) {
+  header .header-right-container div span:first-child {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
