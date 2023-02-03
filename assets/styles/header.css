@@ -2,4 +2,65 @@ header {
   height: 75px;
   width: 100%;
   background-color: #1564c0;
+  position: fixed;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-left-container {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+header .header-left-container .logo {
+  margin-right: 18px;
+}
+header .header-left-container .categories-box {
+  display: flex;
+  align-items: center;
+}
+header .header-left-container .categories-box span {
+  margin-right: 12px;
+}
+header .header-center-container {
+  color: #ffffff;
+  width: 500px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+header .header-center-container .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .header-center-container .search-box input {
+  opacity: 0.3;
+  border-radius: 4px;
+  height: 50px;
+  width: 100%;
+  height: 50px;
+}
+header .header-center-container .search-box .search-box-content {
+  position: absolute;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-right-container {
+  color: #ffffff;
+  display: flex;
+}
+header .header-right-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-right-container div:not(:last-child) {
+  margin-right: 18px;
+}
+header .header-right-container div span:last-child {
+  margin-left: 12px;
 }/*# sourceMappingURL=header.css.map */
