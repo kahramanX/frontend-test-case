@@ -1,4 +1,4 @@
-require("./assets/styles/featuredProducts.scss");
+require("./assets/styles/widgets.scss");
 require("./assets/styles/index.scss");
 require("./assets/styles/header.scss");
 require("./assets/styles/mainSlider.scss");

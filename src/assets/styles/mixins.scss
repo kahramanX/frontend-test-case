@@ -1,0 +1,59 @@
+@mixin center-all-frames-using-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-vertical-using-flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin responsive-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@mixin product-section-title {
+  .section-title-container {
+    @include center-vertical-using-flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+    }
+
+    .section-title-left {
+      @media screen and (max-width: 425px) {
+        margin-bottom: 12px;
+      }
+    }
+
+    .section-title-right {
+      @include center-all-frames-using-flex;
+
+      color: $dark_blue;
+      font-size: 12px;
+      font-weight: 600;
+
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+}

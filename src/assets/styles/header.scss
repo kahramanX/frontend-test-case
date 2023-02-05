@@ -1,10 +1,13 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 header {
   height: 75px;
   width: 100%;
   background-color: $dark_blue;
   position: sticky;
+  top: 0;
+  z-index: 99;
   font-weight: 500;
   padding-left: 8px;
   padding-right: 8px;
@@ -17,8 +20,7 @@ header {
   }
 
   .header-left-container {
-    display: flex;
-    align-items: center;
+    @include center-vertical-using-flex;
     color: $white;
 
     .logo {
@@ -26,8 +28,7 @@ header {
     }
 
     .categories-box {
-      display: flex;
-      align-items: center;
+      @include center-vertical-using-flex;
 
       span {
         margin-right: 12px;
@@ -69,7 +70,6 @@ header {
 
     .search-box {
       @include center-all-frames-using-flex;
-
       position: relative;
 
       input {

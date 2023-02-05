@@ -4,9 +4,3 @@ $white: #ffffff;
 $dark_grey: #424242;
 $mid_grey: #9d9d9d;
 $light_grey: #eeeeee;
-
-@mixin center-all-frames-using-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
