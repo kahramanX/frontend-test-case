@@ -9,6 +9,8 @@ section {
 #featured-products-section {
   @include responsive-container;
   @include product-section-title;
+  margin-top: 28px;
+  margin-bottom: 28px;
 
   .sorted-grid-products {
     display: grid;
@@ -31,4 +33,9 @@ section {
       height: 250px;
     }
   }
+}
+
+#bestseller-products-section {
+  @include responsive-container;
+  @include product-section-title;
 }
