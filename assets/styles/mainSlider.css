@@ -1,3 +1,37 @@
-.swiper-wrapper {
+.MainSlider .swiper-wrapper {
   height: 400px;
+}
+.MainSlider .swiper-wrapper .swiper-slide {
+  border: 1px solid red;
+  opacity: 0.4;
+  background-color: grey;
+}
+.MainSlider .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+.MainSlider .swiper-pagination {
+  border: 3px solid green !important;
+  bottom: 20px;
+}
+.MainSlider .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  padding: 40px 20px;
+  border-radius: 4px;
+  left: 120px;
+}
+.MainSlider .swiper-button-prev::after {
+  font-family: "Material Symbols Outlined";
+  content: "\e5de";
+  color: #ffffff;
+}
+.MainSlider .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  padding: 40px 20px;
+  border-radius: 4px;
+  right: 120px;
+}
+.MainSlider .swiper-button-next::after {
+  font-family: "Material Symbols Outlined";
+  content: "\e5df";
+  color: #ffffff;
 }/*# sourceMappingURL=mainSlider.css.map */
