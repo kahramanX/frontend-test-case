@@ -1,0 +1,48 @@
+@import "../styles/variables.scss";
+
+.MainSlider {
+  .swiper-wrapper {
+    height: 400px;
+
+    .swiper-slide {
+      border: 1px solid red;
+      opacity: 0.4;
+      background-color: grey;
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination {
+    border: 3px solid green !important;
+    bottom: 20px;
+  }
+
+  .swiper-button-prev {
+    background-color: #000000b3;
+    padding: 40px 20px;
+    border-radius: 4px;
+    left: 120px;
+
+    &::after {
+      font-family: "Material Symbols Outlined";
+      content: "\e5de";
+      color: $white;
+    }
+  }
+
+  .swiper-button-next {
+    background-color: #000000b3;
+    padding: 40px 20px;
+    border-radius: 4px;
+    right: 120px;
+
+    &::after {
+      font-family: "Material Symbols Outlined";
+      content: "\e5df";
+      color: $white;
+    }
+  }
+}

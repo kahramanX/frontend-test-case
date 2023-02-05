@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- FOUC IGNORED -->
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +16,84 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Swiper CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <!-- Compiled SCSS Files -->
     <link rel="stylesheet" href="assets/styles/index.css">
     <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/mainSlider.css">
+
     <title>Proj-e | Test Case</title>
 </head>
 
 <body>
     <header>
-        <div>header</div>
+        <div class="header-left-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/165x50" />
+            </div>
+            <div class="categories-box">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <span class="categories-text">Kategoriler</span>
+            </div>
+        </div>
+        <div class="header-center-container">
+            <div class="search-box">
+                <input type="text" />
+                <div class="search-box-content">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <span>Ürün ara</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-right-container">
+            <div class="user-register-box">
+                <span>Üyelik</span>
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+            </div>
+            <div class="cart-box">
+                <span>Sepetim</span>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+        </div>
     </header>
-    <h1>Öne Çıkan Ürünler</h1>
+
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper MainSlider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <script src="controller/slider.js"></script>
 </body>
 
 </html>
