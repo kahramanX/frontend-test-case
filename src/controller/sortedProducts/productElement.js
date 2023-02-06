@@ -92,6 +92,7 @@ module.exports = productElement = (
                 imgSrc,
               });
               console.log("Current Cart : ", cartData);
+              alert("Ürün sepete (localStorage) eklendi!");
             })
         )
     );
