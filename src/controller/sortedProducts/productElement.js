@@ -74,6 +74,12 @@ module.exports = productElement = (
                 "Selected Product's ID : ",
                 event.target.dataset.productId
               );
+              console.log("Selected Product's Info", {
+                productID,
+                name,
+                price,
+                imgSrc,
+              });
             })
         )
     );
