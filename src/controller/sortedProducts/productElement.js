@@ -81,13 +81,6 @@ module.exports = productElement = (
 
               localStorage.setItem("cart", JSON.stringify(cartData));
 
-              console.log("Selected Product's Info:", {
-                productID,
-                name,
-                price,
-                imgSrc,
-              });
-
               console.log("Current Cart : ", cartData);
 
               $(".cart-badge").text(cartData.length);
