@@ -1,13 +1,21 @@
 @import "../styles/variables.scss";
 
 .MainSlider {
+  background-color: $dark_blue;
   .swiper-wrapper {
-    height: 200px;
+    height: 500px;
 
     .swiper-slide {
-      border: 1px solid red;
       opacity: 0.4;
       background-color: grey;
+    }
+
+    .swiper-slide.big {
+      width: 400px !important;
+    }
+
+    .swiper-slide.small {
+      width: 200px !important;
     }
 
     .swiper-slide-active {

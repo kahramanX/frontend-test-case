@@ -1,10 +1,10 @@
 let $ = require("jquery");
-let bestSellerProducts = require("../data/bestSellerProducts.json");
+let featuredProducts = require("../../data/featuredProducts.json");
 let productElement = require("./productElement");
 
 $(function () {
-  $(".BestsellerSlider>.swiper-wrapper").append(
-    bestSellerProducts.map((product, index) => {
+  $(".widget.sorted-grid-products").append(
+    featuredProducts.map((product, index) => {
       return productElement(
         product.ID,
         product.topBadgeType,

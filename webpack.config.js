@@ -6,8 +6,8 @@ module.exports = {
   entry: [
     "./src/index.js",
     "./src/controller/sliders.js",
-    "./src/controller/featuredProduct.js",
-    "./src/controller/bestSellerProduct.js",
+    "./src/controller/sortedProducts/featuredProduct.js",
+    "./src/controller/sortedProducts/bestSellerProduct.js",
   ],
   output: {
     filename: "bundle.js",
