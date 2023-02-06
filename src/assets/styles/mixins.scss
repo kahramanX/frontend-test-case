@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+@mixin center-horizontal-using-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @mixin responsive-container {
   width: 1000px;
   margin-left: auto;
@@ -30,7 +35,6 @@
   .section-title-container {
     @include center-vertical-using-flex;
     justify-content: space-between;
-    border: 1px solid red;
     padding-top: 18px;
     padding-bottom: 18px;
 
@@ -56,4 +60,13 @@
       }
     }
   }
+}
+
+@mixin general-badge-styles {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
