@@ -1,0 +1,16 @@
+[
+  {
+    "ID": 1,
+    "topBadgeType": "web-exclusive-badge",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.5",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.455",
+    "leftItem": {
+      "productCount": "2"
+    },
+    "isShippingToday": false
+  }
+]

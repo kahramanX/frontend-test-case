@@ -4,5 +4,3 @@ require("./assets/styles/header.scss");
 require("./assets/styles/mainSlider.scss");
 require("./assets/styles/bestSellerSlider.scss");
 require("./assets/styles/variables.scss");
-
-console.log("index.js file");
