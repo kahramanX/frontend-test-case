@@ -23,14 +23,10 @@ module.exports = mainSliderElement = (
               .append($("<div>").addClass("product-name").text(name))
               .append(
                 $("<ul>")
-                  .append("<li>")
-                  .text(attributes.attr1)
-                  .append("<li>")
-                  .text(attributes.attr2)
-                  .append("<li>")
-                  .text(attributes.attr3)
-                  .append("<li>")
-                  .text(attributes.attr4)
+                  .append($("<li>").text(attributes.attr1))
+                  .append($("<li>").text(attributes.attr2))
+                  .append($("<li>").text(attributes.attr3))
+                  .append($("<li>").text(attributes.attr4))
               )
               .append(
                 $("<div>")
