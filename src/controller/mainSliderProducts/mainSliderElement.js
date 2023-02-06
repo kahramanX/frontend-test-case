@@ -31,7 +31,7 @@ module.exports = mainSliderElement = (
               .append(
                 $("<div>")
                   .addClass("product-price-badge")
-                  .append($("<span>").text(price))
+                  .append($("<span>").text(`₺ ${price}`))
               )
           )
       );
@@ -50,7 +50,7 @@ module.exports = mainSliderElement = (
               .append(
                 $("<div>")
                   .addClass("product-price-badge")
-                  .append($("<span>").text(price))
+                  .append($("<span>").text(`₺ ${price}`))
               )
           )
       );

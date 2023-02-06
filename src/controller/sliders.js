@@ -11,6 +11,11 @@ $(function () {
     loop: true,
     centeredSlides: true,
 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
     breakpoints: {
       1440: {
         slidesPerView: 5,
