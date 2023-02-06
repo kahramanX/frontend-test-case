@@ -70,7 +70,7 @@ module.exports = productElement = (
             .attr("data-product-id", productID)
             .text("SEPETE EKLE")
             .on("click", (event) => {
-              let cartData = JSON.parse(localStorage.getItem("cart"));
+              let cartData = JSON.parse(window.localStorage.getItem("cart"));
 
               cartData.push({
                 productID,
@@ -79,7 +79,7 @@ module.exports = productElement = (
                 imgSrc,
               });
 
-              localStorage.setItem("cart", JSON.stringify(cartData));
+              window.localStorage.setItem("cart", JSON.stringify(cartData));
 
               console.log("Current Cart : ", cartData);
 
