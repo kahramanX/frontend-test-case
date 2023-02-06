@@ -8,6 +8,7 @@ module.exports = {
     "./src/controller/sliders.js",
     "./src/controller/sortedProducts/featuredProduct.js",
     "./src/controller/sortedProducts/bestSellerProduct.js",
+    "./src/controller/mainSlider/mainSlider.js",
   ],
   output: {
     filename: "bundle.js",
