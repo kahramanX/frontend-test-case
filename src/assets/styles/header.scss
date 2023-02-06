@@ -158,6 +158,32 @@ header {
     color: $dark_blue;
     cursor: pointer;
   }
+
+  .cart-container {
+    border-top: 1px solid $dark_blue;
+    border-bottom: 1px solid $dark_blue;
+
+    .cart-product-container {
+      @include center-vertical-using-flex;
+      justify-content: space-around;
+      border-bottom: 1px solid $light_blue;
+      margin-bottom: 4px;
+
+      .product-id {
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      .product-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        background-color: $dark_blue;
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
+    }
+  }
 }
 
 .side-cart-container.close-cart {
