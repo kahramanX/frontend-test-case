@@ -17,6 +17,10 @@ section {
         background-color: $light_blue;
         color: $white;
         @include general-badge-styles;
+
+        @media screen and (max-width: 330px) {
+          letter-spacing: 0px;
+        }
       }
 
       img {
