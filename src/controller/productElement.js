@@ -69,6 +69,12 @@ module.exports = productElement = (
             .addClass("add-to-cart-btn")
             .attr("data-product-id", productID)
             .text("SEPETE EKLE")
+            .on("click", (event) => {
+              console.log(
+                "Selected Product's ID : ",
+                event.target.dataset.productId
+              );
+            })
         )
     );
 };
