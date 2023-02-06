@@ -111,6 +111,18 @@ header {
         margin-right: 18px;
       }
 
+      .cart-icon {
+        .cart-badge {
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          background-color: red;
+          color: $white;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+
       span {
         &:last-child {
           margin-left: 12px;

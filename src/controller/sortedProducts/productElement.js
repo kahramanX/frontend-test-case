@@ -70,10 +70,6 @@ module.exports = productElement = (
             .attr("data-product-id", productID)
             .text("SEPETE EKLE")
             .on("click", (event) => {
-              console.log(
-                "Selected Product's ID : ",
-                event.target.dataset.productId
-              );
               let cartData = JSON.parse(localStorage.getItem("cart"));
 
               cartData.push({
@@ -91,7 +87,11 @@ module.exports = productElement = (
                 price,
                 imgSrc,
               });
+
               console.log("Current Cart : ", cartData);
+
+              $(".cart-badge").text(cartData.length);
+
               alert("Ürün sepete (localStorage) eklendi!");
             })
         )
