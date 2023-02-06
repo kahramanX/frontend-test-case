@@ -23,8 +23,19 @@ header {
     @include center-vertical-using-flex;
     color: $white;
 
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
     .logo {
       margin-right: 18px;
+
+      img {
+        @media (max-width: 800px) {
+          width: 120px;
+        }
+      }
     }
 
     .categories-box {
