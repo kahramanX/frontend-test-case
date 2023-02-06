@@ -24,7 +24,6 @@ let bestSellerSlider = new Swiper(".BestsellerSlider", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 2,
-  spaceBetween: 20,
   loop: true,
   centeredSlides: true,
 
