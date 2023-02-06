@@ -8,7 +8,7 @@ module.exports = {
     "./src/controller/sliders.js",
     "./src/controller/sortedProducts/featuredProduct.js",
     "./src/controller/sortedProducts/bestSellerProduct.js",
-    "./src/controller/mainSlider/mainSlider.js",
+    "./src/controller/mainSliderProducts/mainSlider.js",
     "./src/controller/header.js",
   ],
   output: {
