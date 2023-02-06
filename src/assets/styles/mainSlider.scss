@@ -9,12 +9,19 @@
     .swiper-slide.big {
       position: relative;
       width: 400px !important;
-      height: 100%;
+
+      @media screen and (max-width: 768px) {
+        width: 350px !important;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 300px !important;
+      }
 
       .slider-product-container {
         img {
           width: 100%;
-          height: 100%;
+          height: 493px;
         }
 
         .product-contents {
@@ -91,8 +98,17 @@
   }
 
   .swiper-pagination {
-    border: 3px solid green !important;
-    bottom: 20px;
+    bottom: 10px;
+
+    .swiper-pagination-bullet {
+      border: 1px solid $white !important;
+      background-color: $dark_blue;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $white;
+    }
   }
 
   .swiper-button-prev {
@@ -100,6 +116,22 @@
     padding: 40px 20px;
     border-radius: 4px;
     left: 100px;
+
+    @media screen and (max-width: 1100px) {
+      left: 70px;
+    }
+
+    @media screen and (max-width: 900px) {
+      left: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 25px;
+    }
+
+    @media screen and (max-width: 425px) {
+      left: 10px;
+    }
 
     &::after {
       font-family: "Material Symbols Outlined";
@@ -113,6 +145,22 @@
     padding: 40px 20px;
     border-radius: 4px;
     right: 100px;
+
+    @media screen and (max-width: 1100px) {
+      right: 70px;
+    }
+
+    @media screen and (max-width: 900px) {
+      right: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+      right: 25px;
+    }
+
+    @media screen and (max-width: 425px) {
+      right: 10px;
+    }
 
     &::after {
       font-family: "Material Symbols Outlined";
