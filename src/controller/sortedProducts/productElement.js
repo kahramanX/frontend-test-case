@@ -1,8 +1,9 @@
 let $ = require("jquery");
 let refreshCartProducts = require("../cartProducts/cartContainer");
 
-module.exports = productElement = (
+let productSkeleton = (
   productID,
+  itemType,
   topBadgeType,
   imgSrc,
   starRate,
@@ -94,4 +95,53 @@ module.exports = productElement = (
             })
         )
     );
+};
+
+module.exports = productElement = (
+  productID,
+  itemType,
+  topBadgeType,
+  imgSrc,
+  starRate,
+  commentCount,
+  code,
+  name,
+  price,
+  leftItem,
+  isShippingToday
+) => {
+  if (itemType == "grid") {
+    return productSkeleton(
+      productID,
+      itemType,
+      topBadgeType,
+      imgSrc,
+      starRate,
+      commentCount,
+      code,
+      name,
+      price,
+      leftItem,
+      isShippingToday
+    );
+  }
+  if (itemType == "slider") {
+    return $("<div>")
+      .addClass("swiper-slide")
+      .append(
+        productSkeleton(
+          productID,
+          itemType,
+          topBadgeType,
+          imgSrc,
+          starRate,
+          commentCount,
+          code,
+          name,
+          price,
+          leftItem,
+          isShippingToday
+        )
+      );
+  }
 };
