@@ -3,6 +3,7 @@ let bestSellerProducts = require("../../data/bestSellerProducts.json");
 let productElement = require("./productElement");
 
 $(function () {
+  // Json dosyasından alınan veriler productElement komponentine gönderiliyor
   $(".BestsellerSlider>.swiper-wrapper").append(
     bestSellerProducts.map((product, index) => {
       return productElement(

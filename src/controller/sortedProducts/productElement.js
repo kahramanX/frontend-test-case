@@ -1,4 +1,5 @@
 let $ = require("jquery");
+let refreshCartProducts = require("../cartProducts/cartContainer");
 
 module.exports = productElement = (
   productID,
@@ -70,8 +71,10 @@ module.exports = productElement = (
             .attr("data-product-id", productID)
             .text("SEPETE EKLE")
             .on("click", (event) => {
-              let cartData = JSON.parse(localStorage.getItem("cart"));
+              // lcoalstorage'den sepet veriler getiliyor
+              let cartData = JSON.parse(window.localStorage.getItem("cart"));
 
+              // veriler localstorage'a pushlanıyor
               cartData.push({
                 productID,
                 name,
@@ -79,13 +82,15 @@ module.exports = productElement = (
                 imgSrc,
               });
 
-              localStorage.setItem("cart", JSON.stringify(cartData));
+              //localstorage'a string olarak aktarılıyor
+              window.localStorage.setItem("cart", JSON.stringify(cartData));
 
               console.log("Current Cart : ", cartData);
 
+              // sepet iconu yanında sepette bulunan ürünlerin adeti yazdırılıyor
               $(".cart-badge").text(cartData.length);
-
-              alert("Ürün sepete (localStorage) eklendi!");
+              // sepet sayfasının tekrar renderlanması için refreshCartProducts invoke ediliyor
+              refreshCartProducts();
             })
         )
     );

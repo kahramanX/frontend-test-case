@@ -3,6 +3,7 @@ let featuredProducts = require("../../data/featuredProducts.json");
 let productElement = require("./productElement");
 
 $(function () {
+  // Json dosyasından alınan veriler productElement komponentine gönderiliyor
   $(".widget.sorted-grid-products").append(
     featuredProducts.map((product, index) => {
       return productElement(
