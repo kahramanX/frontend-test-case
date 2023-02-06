@@ -71,8 +71,10 @@ module.exports = productElement = (
             .attr("data-product-id", productID)
             .text("SEPETE EKLE")
             .on("click", (event) => {
+              // lcoalstorage'den sepet veriler getiliyor
               let cartData = JSON.parse(window.localStorage.getItem("cart"));
 
+              // veriler localstorage'a pushlanıyor
               cartData.push({
                 productID,
                 name,
@@ -80,11 +82,14 @@ module.exports = productElement = (
                 imgSrc,
               });
 
+              //localstorage'a string olarak aktarılıyor
               window.localStorage.setItem("cart", JSON.stringify(cartData));
 
               console.log("Current Cart : ", cartData);
 
+              // sepet iconu yanında sepette bulunan ürünlerin adeti yazdırılıyor
               $(".cart-badge").text(cartData.length);
+              // sepet sayfasının tekrar renderlanması için refreshCartProducts invoke ediliyor
               refreshCartProducts();
             })
         )
