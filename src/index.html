@@ -17,8 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Swiper CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
 
     <title>Proj-e | Test Case</title>
 </head>
@@ -65,7 +64,7 @@
 
     <section>
         <!-- Slider main container -->
-        <div class="swiper MainSlider">
+        <div class="swiper-container MainSlider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -75,8 +74,8 @@
                 <div class="swiper-slide">Slide 4</div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
+            <!--             <div class="swiper-pagination"></div>
+ -->
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -123,6 +122,33 @@
                     <div class="add-to-cart-btn">SEPETE EKLE</div>
                 </div>
             </div>
+            <div class="product-container">
+                <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                <img src="https://via.placeholder.com/200x180?text=Product" />
+                <div class="product-rank-container">
+                    <div class="product-star">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span>4.6</span>
+                    </div>
+                    <div class="product-comments">(122) Yorum</div>
+                </div>
+                <div class="product-code">PA2N0006TR</div>
+                <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                <div class="product-price">₺ 1.399</div>
+                <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                <div class="shipping-today">BUGÜN KARGODA!</div>
+                <div class="add-to-cart-container">
+                    <div class="compare-btn">
+                        <span class="material-symbols-outlined">
+                            compare_arrows
+                        </span>
+                    </div>
+                    <div class="add-to-cart-btn">SEPETE EKLE</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -138,10 +164,169 @@
                 </span>
             </div>
         </div>
+
+        <div data-uri="./" class="widget sorted-slide-products">
+            <!-- Slider main container -->
+            <div class="swiper-container BestsellerSlider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="product-container">
+                            <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                            <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                            <img src="https://via.placeholder.com/170x180?text=Product" />
+                            <div class="product-rank-container">
+                                <div class="product-star">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-comments">(122) Yorum</div>
+                            </div>
+                            <div class="product-code">PA2N0006TR</div>
+                            <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                            <div class="product-price">₺ 1.399</div>
+                            <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                            <div class="shipping-today">BUGÜN KARGODA!</div>
+                            <div class="add-to-cart-container">
+                                <div class="compare-btn">
+                                    <span class="material-symbols-outlined">
+                                        compare_arrows
+                                    </span>
+                                </div>
+                                <div class="add-to-cart-btn">SEPETE EKLE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-container">
+                            <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                            <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                            <img src="https://via.placeholder.com/170x180?text=Product" />
+                            <div class="product-rank-container">
+                                <div class="product-star">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-comments">(122) Yorum</div>
+                            </div>
+                            <div class="product-code">PA2N0006TR</div>
+                            <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                            <div class="product-price">₺ 1.399</div>
+                            <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                            <div class="shipping-today">BUGÜN KARGODA!</div>
+                            <div class="add-to-cart-container">
+                                <div class="compare-btn">
+                                    <span class="material-symbols-outlined">
+                                        compare_arrows
+                                    </span>
+                                </div>
+                                <div class="add-to-cart-btn">SEPETE EKLE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-container">
+                            <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                            <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                            <img src="https://via.placeholder.com/170x180?text=Product" />
+                            <div class="product-rank-container">
+                                <div class="product-star">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-comments">(122) Yorum</div>
+                            </div>
+                            <div class="product-code">PA2N0006TR</div>
+                            <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                            <div class="product-price">₺ 1.399</div>
+                            <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                            <div class="shipping-today">BUGÜN KARGODA!</div>
+                            <div class="add-to-cart-container">
+                                <div class="compare-btn">
+                                    <span class="material-symbols-outlined">
+                                        compare_arrows
+                                    </span>
+                                </div>
+                                <div class="add-to-cart-btn">SEPETE EKLE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-container">
+                            <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                            <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                            <img src="https://via.placeholder.com/170x180?text=Product" />
+                            <div class="product-rank-container">
+                                <div class="product-star">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-comments">(122) Yorum</div>
+                            </div>
+                            <div class="product-code">PA2N0006TR</div>
+                            <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                            <div class="product-price">₺ 1.399</div>
+                            <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                            <div class="shipping-today">BUGÜN KARGODA!</div>
+                            <div class="add-to-cart-container">
+                                <div class="compare-btn">
+                                    <span class="material-symbols-outlined">
+                                        compare_arrows
+                                    </span>
+                                </div>
+                                <div class="add-to-cart-btn">SEPETE EKLE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-container">
+                            <div class="web-exclusive-badge">WEB'E ÖZEL</div>
+                            <div class="just-sold-badge">AZ ÖNCE 1 ADET SATILDI!</div>
+                            <img src="https://via.placeholder.com/170x180?text=Product" />
+                            <div class="product-rank-container">
+                                <div class="product-star">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-comments">(122) Yorum</div>
+                            </div>
+                            <div class="product-code">PA2N0006TR</div>
+                            <div class="product-name">IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ</div>
+                            <div class="product-price">₺ 1.399</div>
+                            <div class="items-left-badge">YALNIZCA 2 ÜRÜN KALDI!</div>
+                            <div class="shipping-today">BUGÜN KARGODA!</div>
+                            <div class="add-to-cart-container">
+                                <div class="compare-btn">
+                                    <span class="material-symbols-outlined">
+                                        compare_arrows
+                                    </span>
+                                </div>
+                                <div class="add-to-cart-btn">SEPETE EKLE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
     </section>
 
-    <script>
-        let swiper = Swiper(".MainSlider", {
+    <!--     <script>
+        let swiper = new Swiper(".BestsellerSlider", {
             // Optional parameters
             direction: "horizontal",
             slidesPerView: "auto",
@@ -158,7 +343,7 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
+    </script> -->
 
     <style>
         .material-symbols-outlined {

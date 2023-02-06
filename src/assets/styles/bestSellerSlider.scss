@@ -1,48 +1,34 @@
 @import "../styles/variables.scss";
 
-.MainSlider {
-  .swiper-wrapper {
-    height: 200px;
-
-    .swiper-slide {
-      border: 1px solid red;
-      opacity: 0.4;
-      background-color: grey;
-    }
-
-    .swiper-slide-active {
-      opacity: 1;
-    }
-  }
-
+.BestsellerSlider {
   .swiper-pagination {
     border: 3px solid green !important;
     bottom: 20px;
   }
 
   .swiper-button-prev {
-    background-color: #000000b3;
+    background-color: $light_grey;
     padding: 40px 20px;
     border-radius: 4px;
-    left: 120px;
+    left: 0px;
 
     &::after {
       font-family: "Material Symbols Outlined";
       content: "\e5de";
-      color: $white;
+      color: $dark_grey;
     }
   }
 
   .swiper-button-next {
-    background-color: #000000b3;
+    background-color: $light_grey;
     padding: 40px 20px;
     border-radius: 4px;
-    right: 120px;
+    right: 0px;
 
     &::after {
       font-family: "Material Symbols Outlined";
       content: "\e5df";
-      color: $white;
+      color: $dark_grey;
     }
   }
 }
