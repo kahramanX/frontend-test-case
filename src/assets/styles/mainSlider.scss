@@ -2,24 +2,91 @@
 
 .MainSlider {
   background-color: $dark_blue;
-  .swiper-wrapper {
-    height: 500px;
 
-    .swiper-slide {
-      opacity: 0.4;
-      background-color: grey;
-    }
+  .swiper-wrapper {
+    padding: 40px;
 
     .swiper-slide.big {
+      position: relative;
       width: 400px !important;
+      height: 100%;
+
+      .slider-product-container {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .product-contents {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-80%, -50%);
+
+          .product-code {
+            color: $mid_grey;
+          }
+
+          .product-name {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            margin-top: 16px;
+          }
+
+          ul {
+            li {
+              color: $dark_grey;
+              font-size: 14px;
+              font-weight: 500;
+              margin-bottom: 2px;
+            }
+            margin-bottom: 16px;
+          }
+
+          .product-price-badge {
+            background-color: $dark_blue;
+            width: fit-content;
+            padding: 12px 14px;
+            border-radius: 4px;
+            font-size: 26px;
+            font-weight: 700;
+            color: $white;
+          }
+        }
+      }
     }
 
     .swiper-slide.small {
-      width: 200px !important;
-    }
+      width: 250px !important;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
 
-    .swiper-slide-active {
-      opacity: 1;
+      .slider-product-container {
+        img {
+          width: 100%;
+        }
+
+        .product-contents {
+          background-color: $white;
+          padding: 12px 14px;
+
+          .product-name {
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: $dark_grey;
+          }
+
+          .product-price-badge {
+            text-align: center;
+            color: $dark_blue;
+            font-weight: 700;
+            font-size: 28px;
+          }
+        }
+      }
     }
   }
 
@@ -32,7 +99,7 @@
     background-color: #000000b3;
     padding: 40px 20px;
     border-radius: 4px;
-    left: 120px;
+    left: 100px;
 
     &::after {
       font-family: "Material Symbols Outlined";
@@ -45,7 +112,7 @@
     background-color: #000000b3;
     padding: 40px 20px;
     border-radius: 4px;
-    right: 120px;
+    right: 100px;
 
     &::after {
       font-family: "Material Symbols Outlined";
