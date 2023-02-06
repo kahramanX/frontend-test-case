@@ -18,7 +18,7 @@ section {
         color: $white;
         @include general-badge-styles;
 
-        @media screen and (max-width: 330px) {
+        @media screen and (max-width: 426px) {
           letter-spacing: 0px;
         }
       }
