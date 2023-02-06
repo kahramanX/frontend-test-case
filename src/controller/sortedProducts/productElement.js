@@ -1,4 +1,5 @@
 let $ = require("jquery");
+let refreshCartProducts = require("../cartProducts/cartContainer");
 
 module.exports = productElement = (
   productID,
@@ -84,8 +85,7 @@ module.exports = productElement = (
               console.log("Current Cart : ", cartData);
 
               $(".cart-badge").text(cartData.length);
-
-              alert("Ürün sepete (localStorage) eklendi!");
+              refreshCartProducts();
             })
         )
     );

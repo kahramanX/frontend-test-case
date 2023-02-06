@@ -9,7 +9,6 @@ module.exports = {
     "./src/controller/sortedProducts/featuredProduct.js",
     "./src/controller/sortedProducts/bestSellerProduct.js",
     "./src/controller/mainSliderProducts/mainSlider.js",
-    "./src/controller/cartProducts/cartContainer.js",
     "./src/controller/header.js",
   ],
   output: {
