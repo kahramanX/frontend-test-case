@@ -23,8 +23,19 @@ header {
     @include center-vertical-using-flex;
     color: $white;
 
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
     .logo {
       margin-right: 18px;
+
+      img {
+        @media (max-width: 800px) {
+          width: 120px;
+        }
+      }
     }
 
     .categories-box {
@@ -93,6 +104,21 @@ header {
     color: $white;
     display: flex;
 
+    .cart-box {
+      cursor: pointer;
+      .cart-icon {
+        .cart-badge {
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          background-color: red;
+          color: $white;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+
     div {
       @include center-all-frames-using-flex;
 
@@ -113,4 +139,35 @@ header {
       }
     }
   }
+}
+
+.side-cart-container {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: $white;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .close-cart-btn {
+    border: 1px solid white;
+    width: fit-content;
+    color: $dark_blue;
+    cursor: pointer;
+  }
+}
+
+.side-cart-container.close-cart {
+  position: absolute;
+  top: 0;
+  width: 0px;
+  padding: 0px;
+}
+
+.side-cart-container.open-cart {
+  width: 50%;
+  padding: 50px 25px;
 }

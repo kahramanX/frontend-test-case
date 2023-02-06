@@ -1,0 +1,85 @@
+[
+  {
+    "ID": 1,
+    "itemType": "small",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "2.399",
+    "code": "PA2N006TR",
+    "img": "https://via.placeholder.com/200x310",
+    "attributes": {
+      "attr1": "",
+      "attr2": "",
+      "attr3": "",
+      "attr4": ""
+    }
+  },
+  {
+    "ID": 2,
+    "itemType": "small",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "2.399",
+    "code": "PA2N006TR",
+    "img": "https://via.placeholder.com/200x310",
+    "attributes": {
+      "attr1": "",
+      "attr2": "",
+      "attr3": "",
+      "attr4": ""
+    }
+  },
+  {
+    "ID": 3,
+    "itemType": "big",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "1.699",
+    "code": "PA2N006TR",
+    "img": "https://via.placeholder.com/300x350",
+    "attributes": {
+      "attr1": "5' Ekran Boyu",
+      "attr2": "1300 Hz Tarama Hızı",
+      "attr3": "3840x2160px çözünürlük",
+      "attr4": "Tizen Arayüz"
+    }
+  },
+  {
+    "ID": 4,
+    "itemType": "small",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "2.399",
+    "code": "PA2N006TR",
+    "img": "https://via.placeholder.com/200x310",
+    "attributes": {
+      "attr1": "",
+      "attr2": "",
+      "attr3": "",
+      "attr4": ""
+    }
+  },
+  {
+    "ID": 5,
+    "itemType": "small",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "2.399",
+    "img": "https://via.placeholder.com/200x310",
+    "attributes": {
+      "attr1": "",
+      "attr2": "",
+      "attr3": "",
+      "attr4": ""
+    }
+  },
+  {
+    "ID": 6,
+    "itemType": "big",
+    "name": "Sony Walkman with High-Res Audio",
+    "price": "1.699",
+    "code": "PA2N006TR",
+    "img": "https://via.placeholder.com/300x350",
+    "attributes": {
+      "attr1": "5' Ekran Boyu",
+      "attr2": "1300 Hz Tarama Hızı",
+      "attr3": "3840x2160px çözünürlük",
+      "attr4": "Tizen Arayüz"
+    }
+  }
+]

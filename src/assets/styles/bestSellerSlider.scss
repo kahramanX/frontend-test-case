@@ -1,0 +1,34 @@
+@import "../styles/variables.scss";
+
+.BestsellerSlider {
+  .swiper-pagination {
+    border: 3px solid green !important;
+    bottom: 20px;
+  }
+
+  .swiper-button-prev {
+    background-color: $light_grey;
+    padding: 40px 20px;
+    border-radius: 4px;
+    left: 0px;
+
+    &::after {
+      font-family: "Material Symbols Outlined";
+      content: "\e5de";
+      color: $dark_grey;
+    }
+  }
+
+  .swiper-button-next {
+    background-color: $light_grey;
+    padding: 40px 20px;
+    border-radius: 4px;
+    right: 0px;
+
+    &::after {
+      font-family: "Material Symbols Outlined";
+      content: "\e5df";
+      color: $dark_grey;
+    }
+  }
+}

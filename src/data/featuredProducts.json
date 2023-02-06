@@ -1,0 +1,122 @@
+[
+  {
+    "ID": 1,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.5",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.455",
+    "leftItem": "2",
+    "isShippingToday": false
+  },
+  {
+    "ID": 2,
+    "topBadgeType": "just-sold",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.8",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "6.562",
+    "leftItem": null,
+    "isShippingToday": true
+  },
+  {
+    "ID": 3,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.8",
+    "commentCount": "256",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.322",
+    "leftItem": "4",
+    "isShippingToday": true
+  },
+  {
+    "ID": 4,
+    "topBadgeType": "just-sold",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.4",
+    "commentCount": "34",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "9.432",
+    "leftItem": null,
+    "isShippingToday": false
+  },
+  {
+    "ID": 5,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.5",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "5.654",
+    "leftItem": "2",
+    "isShippingToday": false
+  },
+  {
+    "ID": 6,
+    "topBadgeType": "just-sold",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.8",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.543",
+    "leftItem": null,
+    "isShippingToday": true
+  },
+  {
+    "ID": 7,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "3.8",
+    "commentCount": "455",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "3.336",
+    "leftItem": "4",
+    "isShippingToday": true
+  },
+  {
+    "ID": 8,
+    "topBadgeType": "just-sold",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.8",
+    "commentCount": "121",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "4.985",
+    "leftItem": null,
+    "isShippingToday": true
+  },
+  {
+    "ID": 9,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.8",
+    "commentCount": "534",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.543",
+    "leftItem": "4",
+    "isShippingToday": true
+  },
+  {
+    "ID": 10,
+    "topBadgeType": "web-exclusive",
+    "img": "https://via.placeholder.com/200x180?text=Product",
+    "starRate": "4.4",
+    "commentCount": "406",
+    "code": "PA2N0006TR",
+    "name": "IPHONE 6 16GB AKILLI TELEFON UZAY GRİSİ",
+    "price": "1.322",
+    "leftItem": "4",
+    "isShippingToday": true
+  }
+]
